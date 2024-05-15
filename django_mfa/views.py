@@ -15,7 +15,7 @@ from django.contrib.auth import load_backend
 from django.contrib import auth, messages
 from django.urls import reverse, reverse_lazy
 from django.utils.http import url_has_allowed_host_and_scheme
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from u2flib_server import u2f
 from .forms import *
 

@@ -17,7 +17,7 @@ from django.urls import path, include
 from django.contrib import admin
 from sample.views import index, home, log_out, register
 from django.conf import settings
-from django.conf.urls import url
+from django.urls import path
 
 
 urlpatterns = [
@@ -32,5 +32,5 @@ urlpatterns = [
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [
-        url(r'^__debug__/', include(debug_toolbar.urls)),
+        path('__debug__/', include(debug_toolbar.urls)),
     ] + urlpatterns

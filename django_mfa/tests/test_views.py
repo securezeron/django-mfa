@@ -2,7 +2,7 @@ from unittest import skip
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 try:
-    from django.core.urlresolvers import reverse
+    from django.urls import reverse
 except Exception:
     from django.urls import reverse
 from django.test import Client, TestCase
